@@ -1,13 +1,9 @@
 @font-face {
-    font-family: "Poppins Light";
-    src: url(/fonts/Poppins-Light.ttf);
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../font/poppins-regular-webfont.woff') format('woff');
 }
-
-@font-face {
-    font-family: "Poppins Italic";
-    src: url(/fonts/Poppins-Italic.ttf);
-}
-
 :root {
     --primary-color: #009688;
     --primary-shadow: 0 4px 30px rgba(0, 0, 555, 0.1);
@@ -31,6 +27,8 @@ body {
     font-family: "Poppins Light";
     background-color: #fafafa;
     font-size: 1rem;
+    font-family: poppins;
+
 }
 
 a {
@@ -58,6 +56,10 @@ a {
     align-items: center;
 
 }
+.download-resume{
+    color: #d0c22e;
+    font-weight: bolder;
+}
 
 .name {
     margin-bottom: 2rem;
@@ -72,7 +74,7 @@ a {
 }
 
 .address a:hover {
-    color: #009688;
+    color: #152169;
     transition: 0.5s ease;
 }
 
