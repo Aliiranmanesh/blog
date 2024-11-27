@@ -75,8 +75,10 @@ a {
 
 }
 
-.list-menue {
+.main-nav * {
     list-style: none;
+}
+.list-menue {
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -110,17 +112,6 @@ a {
 
 .menu-item:hover::after {
     width: 100%;
-}
-
-
-
-
-
-.item-menue a:hover {
-    color: var(--secondery-color);
-    font-size: large;
-    transition: background-color 1s ease;
-
 }
 
 /* section */
@@ -228,107 +219,3 @@ a {
     color: var(--secondery-color);
 }
 
-
-/* Project Responsive */
-
-@media only screen and (max-width: 1200px) {
-    .container {
-        max-width: 960px;
-    }
-
-    .section-profile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .main-section {
-        margin-top: 3rem;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    .container {
-        max-width: 720px;
-    }
-
-    .icon {
-        display: none;
-    }
-
-    .section-left {
-        flex-basis: 100%;
-    }
-
-    .section-profile {
-        display: block;
-    }
-
-}
-
-@media only screen and (max-width: 768px) {
-    .container {
-        max-width: 540px;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-
-    .list-menue {
-        display: none;
-    }
-
-    .section-right {
-        display: none;
-    }
-
-    .section-profile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .main-section {
-        margin-top: 3rem;
-    }
-
-    .footer-style {
-        margin-top: 30%;
-        font-size: 0.7rem;
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .container {
-        max-width: 100%;
-    }
-
-    .section-right {
-        display: none;
-    }
-
-    .icon-top {
-        display: block;
-        margin-top: 3rem;
-    }
-
-    .section-profile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .main-section {
-        margin-top: 3rem;
-    }
-
-    .footer-style {
-        margin-top: 30%;
-        font-size: 0.5rem;
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
