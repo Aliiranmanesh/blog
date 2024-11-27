@@ -1,6 +1,25 @@
-@media (min-width:411px) {
+@media (max-width:420px) {
     .section-right{
         display: none;
+    }
+    .section-left {
+        flex-basis: 100%;
+    }
+    .profile-mobile{
+        display:block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+    .container{
+        width: 100%;
+    }
+}
+@media (max-width:711px) {
+    .profile-pic{
+        width: 10rem;
+        height: 10rem;
     }
     
 }

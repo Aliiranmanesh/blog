@@ -34,6 +34,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     height: 100vh;
     font-size: 1.3rem;
 }
@@ -44,7 +45,7 @@ a {
 }
 
 .container {
-    max-width: 70rem;
+    max-width: 60rem;
     max-height: fit-content;
     margin-right: auto;
     margin-left: auto;
@@ -67,7 +68,15 @@ a {
     align-items: center;
     margin-top: 1rem;
 }
-
+.profile-mobile{
+    display: none;
+    width: 100%;
+    height: fit-content;
+}
+.profile-mobile img{
+    width: 6rem;
+    height: 6rem;
+}
 .main-nav {
     display: flex;
     justify-content: center;
@@ -120,30 +129,6 @@ a {
     margin-top: 7rem;
     color: var(--text-color-secondery);
 }
-
-/* #################### section right */
-.section-right {
-    flex-basis: 50%;
-    display: flex;
-    justify-content: center;
-
-}
-
-.profile-pic {
-    border-radius: 100%;
-    width: 15rem;
-    height: 15rem;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
-}
-
-.profile-pic:hover {
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-}
-
 /* ####################### section left */
 .section-left {
     flex-basis: 50%;
@@ -153,11 +138,12 @@ a {
 
 .section-left h1 {
     margin-bottom: 1rem;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .description-text {
-    font-style: italic;
+    font-style:oblique;
+    font-size: smaller;
 }
 
 .btn {
@@ -199,7 +185,31 @@ a {
 .btn:hover {
     color: var(--text-color);
 }
+/* #################### section right */
+.section-right {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
 
+}
+
+.profile-pic {
+    border-radius: 100%;
+    width: 15rem;
+    height: 15rem;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.profile-pic:hover {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+
+/* ########### Footer */
 .footer-style {
     display: flex;
     justify-content: center;
