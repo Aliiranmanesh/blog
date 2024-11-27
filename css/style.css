@@ -1,11 +1,10 @@
 @font-face {
-    font-family: 'poppins';
+    font-family: poppins;
     font-style: normal;
     font-weight: 900;
     src: url('../font/poppins-regular-webfont.woff') format('woff');
 }
 
-/* Start Project */
 :root {
     --primary-color: #00a693;
     --secondery-color: #FF5722;
@@ -31,6 +30,7 @@ body {
     font-family: poppins;
     background-image: url(../img/bg.jpg);
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +59,7 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* header  */
+/* Header  */
 .header {
     width: 100%;
     height: 3rem;
@@ -68,15 +68,18 @@ a {
     align-items: center;
     margin-top: 1rem;
 }
-.profile-mobile{
+
+.profile-mobile {
     display: none;
     width: 100%;
     height: fit-content;
 }
-.profile-mobile img{
+
+.profile-mobile img {
     width: 6rem;
     height: 6rem;
 }
+
 .main-nav {
     display: flex;
     justify-content: center;
@@ -87,6 +90,7 @@ a {
 .main-nav * {
     list-style: none;
 }
+
 .list-menue {
     padding: 0;
     display: flex;
@@ -129,7 +133,8 @@ a {
     margin-top: 7rem;
     color: var(--text-color-secondery);
 }
-/* ####################### section left */
+
+/* section left */
 .section-left {
     flex-basis: 50%;
 
@@ -141,11 +146,13 @@ a {
     font-weight: bolder;
     margin-bottom: 0.7rem;
 }
-.section-left h2{
+
+.section-left h2 {
     margin-bottom: 0.7rem;
 }
+
 .description-text {
-    font-style:oblique;
+    font-style: oblique;
     font-size: smaller;
 }
 
@@ -188,7 +195,8 @@ a {
 .btn:hover {
     color: var(--text-color);
 }
-/* #################### section right */
+
+/*  section right */
 .section-right {
     flex-basis: 50%;
     display: flex;
@@ -212,13 +220,14 @@ a {
 }
 
 
-/* ########### Footer */
+/* Footer */
 .footer-style {
     display: flex;
     justify-content: center;
-    font-family: "Poppins Italic";
+    font-family: poppins;
     font-size: small;
-    margin-top: 13rem;
+    font-style: italic;
+    margin-top: 10rem;
 
 }
 
@@ -231,4 +240,3 @@ a {
 .footer-style a:hover {
     color: var(--secondery-color);
 }
-
