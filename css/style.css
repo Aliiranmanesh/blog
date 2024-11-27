@@ -13,7 +13,7 @@
 ul {
     list-style-type: none;
 }
-body {
+.bg{
     background-image: url(../img/road-forest-pc.jpg);
     background-position: center;
     background-size: cover;
@@ -21,7 +21,6 @@ body {
     background-attachment: fixed;
     font-family: poppins;
 }
-
 .container{
     width: 70%;
     height: 100vh;
@@ -56,9 +55,30 @@ a:hover{
     color: #606060;
     opacity: 0.4;
 }
+.menu-item {
+    position: relative;
+}
+  
+.menu-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #333;
+    width: 0;
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+    -moz-transition: width 0.3s ease;
+    -ms-transition: width 0.3s ease;
+    -o-transition: width 0.3s ease;
+}
+.menu-item:hover::after {
+    width: 100%;
+}
 .icon{
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 header{
     width: 100%;
