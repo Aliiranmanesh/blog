@@ -139,8 +139,11 @@ a {
 .section-left h1 {
     margin-bottom: 1rem;
     font-weight: bolder;
+    margin-bottom: 0.7rem;
 }
-
+.section-left h2{
+    margin-bottom: 0.7rem;
+}
 .description-text {
     font-style:oblique;
     font-size: smaller;
@@ -215,7 +218,7 @@ a {
     justify-content: center;
     font-family: "Poppins Italic";
     font-size: small;
-    margin-top: 15rem;
+    margin-top: 13rem;
 
 }
 

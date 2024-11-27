@@ -12,9 +12,6 @@
         align-items: center;
         margin-bottom: 4rem;
     }
-    .container{
-        width: 100%;
-    }
 }
 @media (max-width:711px) {
     .profile-pic{
